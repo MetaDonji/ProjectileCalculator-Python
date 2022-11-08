@@ -3,7 +3,7 @@ import math
 #### PROJECTILE CALCULATOR ####
 
 print("""
-        This is a projectile calculator written by Ben Grant
+        This is a projectile calculator written by GaryTheBlobfish
 
         Things to take note before using:
             - Air resistance is considered to be negligible so in reality,
