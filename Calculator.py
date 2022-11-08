@@ -31,10 +31,10 @@ u_horizontal_vel = u*math.cos(math.radians(theta))
 u_vertical_vel = u*math.sin(math.radians(theta))
 
 def findTime():
-    if (quadraticMinus(GRAVITY, (2*u_vertical_vel), (height*2)) < quadraticPlus(GRAVITY, (2*u_vertical_vel), (height*2))):
+    if (quadraticMinus(GRAVITY, (2*u_vertical_vel), (height*2)) <= quadraticPlus(GRAVITY, (2*u_vertical_vel), (height*2))):
         return quadraticPlus(GRAVITY, (2*u_vertical_vel), (height*2))
     
-    elif (quadraticMinus(GRAVITY, (2*u_vertical_vel), (height*2)) > quadraticPlus(GRAVITY, (2*u_vertical_vel), (height*2))):
+    elif (quadraticMinus(GRAVITY, (2*u_vertical_vel), (height*2)) >= quadraticPlus(GRAVITY, (2*u_vertical_vel), (height*2))):
         return quadraticMinus(GRAVITY, (2*u_vertical_vel), (height*2))
 
 v_horizontal_vel = u_horizontal_vel
